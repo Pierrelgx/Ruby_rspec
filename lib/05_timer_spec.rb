@@ -1,6 +1,3 @@
-def time_string(k)
-    t = Time.new(0)
-    t1 = t + k
-    b = t1.strftime("%H:%M:%S")
-    p b
+def time_string(sec)
+    Time.at(sec).utc.strftime("%H:%M:%S")
   end
